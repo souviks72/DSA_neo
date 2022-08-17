@@ -1,0 +1,8 @@
+https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/?ref=shm
+
+HARD
+5. Merge two sorted array
+
+MEDIUM
+8. Inversion Of Array 
+7. Number of pairs 
