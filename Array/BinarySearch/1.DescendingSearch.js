@@ -1,13 +1,10 @@
-let arr = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+let arr = [100, 89, 78, 77, 66, 45, 34, 13, 12, 10];
 
 let binSearch = (x, arr) => {
   let start = 0,
     end = 9;
-  let mid = start + Math.floor((end - start) / 2);
-  console.log(start, end, mid);
-  console.log("....");
   while (start <= end) {
-    mid = start + Math.floor((end - start) / 2);
+    let mid = start + Math.floor((end - start) / 2);
     if (arr[mid] == x) {
       return mid;
     } else if (x > arr[mid]) {
@@ -16,7 +13,8 @@ let binSearch = (x, arr) => {
       start = mid + 1;
     }
   }
+  console.log(start, end);
   return -1;
 };
-let a = binSearch(10, arr);
+let a = binSearch(79, arr);
 console.log(a);

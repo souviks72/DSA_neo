@@ -1,4 +1,4 @@
-//ttps://leetcode.com/problems/find-peak-element
+//https://leetcode.com/problems/find-peak-element
 //https://www.youtube.com/watch?v=OINnBJTRrMU&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=17
 class Solution {
     public int findPeakElement(int[] arr) {
@@ -14,7 +14,6 @@ class Solution {
         
         while(start<=end){
             int mid = start+(end-start)/2;
-            System.out.println(mid);
             
             if(mid>0 && mid<n-1 && arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1]){
                 return mid;
