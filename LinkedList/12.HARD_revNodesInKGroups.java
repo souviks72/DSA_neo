@@ -14,8 +14,7 @@ class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
         if (head == null || k==1) return head;
         
-        ListNode dummy = new ListNo
-        de();
+        ListNode dummy = new ListNode();
         dummy.next = head;
         ListNode prev = dummy, current = dummy, next = dummy;
         
