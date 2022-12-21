@@ -1,0 +1,2 @@
+1.LFU Cache(takeuforward)
+2.kSum(like 4sum,3sum,2sum --> general algo)
