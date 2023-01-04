@@ -1,4 +1,4 @@
-//https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345
+//https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
 //https://www.youtube.com/watch?v=uUXXEgK2Jh8&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=4
 class Compute {
     
