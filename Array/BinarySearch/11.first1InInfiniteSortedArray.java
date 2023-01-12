@@ -17,8 +17,6 @@ class GFG{
             if(arr[mid]==1){
                 res=mid;
                 end=mid-1;
-            }else if(1<arr[mid]){
-                end=mid-1;
             }else{
                 start=mid+1;
             }

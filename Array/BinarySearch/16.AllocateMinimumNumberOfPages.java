@@ -49,3 +49,7 @@ class Solution
         return true;
     }
 };
+
+SOLVE THESE:
+//https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+//https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/description/

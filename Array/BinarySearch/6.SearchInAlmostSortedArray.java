@@ -1,6 +1,5 @@
 //https://www.geeksforgeeks.org/search-almost-sorted-array/
 //https://www.youtube.com/watch?v=W3-KgsCVH1U&list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2&index=9
-/*package whatever //do not write package name here */
 
 import java.io.*;
 
