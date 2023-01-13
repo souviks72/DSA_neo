@@ -87,3 +87,18 @@ class XNode{
         y=y1;
     }
 }
+
+/*
+- We basically create a coordinate system(x,y) with the root being 0,0
+- Everytime we traverse to a child(right or left) we increase y by 1
+- Everytime we traverse to left child we decrease x by 1
+- Everytime we traverse to right child we increase x by 1
+- TreeMaps keep the keys in ascending order
+- Outer TreeMap is for vertical levels/columns --> x
+- Inner TreeMap is for horizontal levels/rows --> y
+- PriorityQueue keeps the values in ascending order, if 2 or more nodes 
+    have same coordinates they should be in ascending order in output
+- Output is List of List
+- All values under same x should be in the same inner array
+- Since y keys are in sorted order, keep extracting the first key and appening outputs to same list
+*/
