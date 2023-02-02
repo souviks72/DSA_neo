@@ -60,3 +60,70 @@ class Solution {
         return findLastRight(root.right);
     }
 }
+
+
+//------------------ALT APPROACH-------------------
+//In above approach we cut root.right and reattach it to the last right of root.left
+//In below approach we cut root.left and attach it to the last left of root.right
+//root is the nod ein which key is found
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public TreeNode deleteNode(TreeNode root, int key) {
+        if(root==null)
+            return root;
+        if(root.val == key)
+            return helper(root);
+
+        TreeNode cur = root;
+        while(cur!=null){
+            if(cur.val>key){
+                if(cur.left!=null && cur.left.val==key){
+                    cur.left = helper(cur.left);
+                    break;
+                }else{
+                    cur = cur.left;
+                }
+            }else{
+                if(cur.right!=null && cur.right.val==key){
+                    cur.right = helper(cur.right);
+                    break;
+                }else{
+                    cur = cur.right;
+                }
+            }
+        }
+        return root;
+    }
+
+    public TreeNode helper(TreeNode root){
+        if(root.right==null)
+            return root.left;
+        else if(root.left==null)
+            return root.right;
+
+        TreeNode leftChild = root.left;
+        TreeNode lastLeft = findLastLeft(root.right);
+        lastLeft.left = leftChild;
+        return root.right;
+    }
+
+    public TreeNode findLastLeft(TreeNode root){
+        if(root.left==null)
+            return root;
+        return findLastLeft(root.left);
+    }
+}
