@@ -65,7 +65,7 @@ class Solution {
 //------------------ALT APPROACH-------------------
 //In above approach we cut root.right and reattach it to the last right of root.left
 //In below approach we cut root.left and attach it to the last left of root.right
-//root is the nod ein which key is found
+//root is the node in which key is found
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
