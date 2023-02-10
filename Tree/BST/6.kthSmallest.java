@@ -14,7 +14,7 @@
  * }
 https://takeuforward.org/data-structure/kth-largest-smallest-element-in-binary-search-tree/
 https://www.youtube.com/watch?v=9TJYWh0adfk&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=46
-https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+https://leetcode.com/pbroblems/kth-smallest-element-in-a-bst/
 
 for kth largest, traverse the whole tree once and count nodes, kth largest = (count - k)th smallesst
  */
