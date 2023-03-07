@@ -22,19 +22,13 @@ class Solution {
         colors[start] = 0;
         while(!q.isEmpty()){
             int x = q.remove();
-            System.out.println(x);
             int[] arr = graph[x];
             for(int i=0;i<arr.length;i++){
                 int y = arr[i];
                 if(colors[y]==-1){
                     q.add(y);
                     colors[y] = 1-colors[x];
-                    System.out.println(y+" "+colors[y]);
                 }else if(colors[y]==colors[x]){
-                    for(int ii=0;ii<colors.length;ii++){
-                        System.out.print(colors[ii]+" ");
-                    }
-                    System.out.println();
                     return false;
                 }
             }
