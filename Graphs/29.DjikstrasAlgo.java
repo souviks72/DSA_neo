@@ -1,5 +1,8 @@
 //https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=implementing-dijkstra-set-1-adjacency-matrix
 //https://www.youtube.com/watch?v=V6H1qAeB-l4&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=32
+
+//WILL FAIL FOR NEGATIVE EDGES
+//WILL TIME OUT FOR NEGATIVE CYCLES
 class Solution
 {
     //Function to find the shortest distance of all the vertices
