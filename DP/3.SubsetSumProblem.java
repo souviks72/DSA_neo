@@ -1,8 +1,6 @@
 //https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article
 //https://www.youtube.com/watch?v=_gPcYovP7wc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=7
 class Solution{
-
-
     static Boolean isSubsetSum(int n, int arr[], int sum){
         // code here
         boolean[][] t = new boolean[n+1][sum+1];
