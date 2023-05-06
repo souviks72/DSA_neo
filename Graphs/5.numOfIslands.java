@@ -63,3 +63,38 @@ class Pair{
         y = y1;
     }
 }
+
+//--------------------------------------------DFS-------------------------------------------------
+class Solution {
+    public int numIslands(char[][] grid) {
+        int rows = grid.length;
+        int cols = grid[0].length;
+
+        int islands = 0;
+
+        boolean vis[][] = new boolean[rows][cols];
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<cols;j++){
+                if(grid[i][j]=='1' && !vis[i][j]){
+                    islands++;
+                    dfs(grid,vis,i,j);
+                }
+            }
+        }
+
+        return islands;
+    }
+
+    public void dfs(char[][] grid, boolean vis[][], int r, int c){
+        vis[r][c] = true;
+        int dx[] = {-1,1,0,0};
+        int dy[] = {0,0,1,-1};
+        for(int i=0;i<4;i++){
+            int dr = r + dx[i];
+            int dc = c + dy[i];
+            if(dr>=0 && dr<grid.length && dc>=0 && dc<grid[0].length && grid[dr][dc]=='1' && !vis[dr][dc]){
+                dfs(grid,vis,dr,dc);
+            }
+        }
+    }
+}
