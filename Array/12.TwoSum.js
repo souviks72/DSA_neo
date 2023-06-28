@@ -17,7 +17,7 @@
             let a = nums.indexOf(arr[s]);
             let b = nums.indexOf(arr[e]);
             if (a == b){ 
-                //without this check, output of [3,3], target = 6 will be [0,0] while actual answer is [0,1]
+                //without this check, output of [3,3], target= 6 will be [0,0] while actual answer is [0,1]
                 b = nums.indexOf(arr[e],a+1);
             }
             return [a,b];
